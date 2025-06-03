@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Dev</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+    }
+    header {
+      background-color: #000;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #00f2ff;
+    }
+    header h1 {
+      color: #00f2ff;
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00f2ff;
+    }
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+      background: linear-gradient(to right, #00111a, #001f33);
+    }
+    .hero h2 {
+      font-size: 3rem;
+      color: #00f2ff;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #ccc;
+    }
+    .cta-btn {
+      margin-top: 2rem;
+      padding: 0.8rem 2rem;
+      background-color: #00f2ff;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .cta-btn:hover {
+      background-color: #00c3cc;
+    }
+    .portfolio {
+      padding: 4rem 2rem;
+      background-color: #0a0a0a;
+      text-align: center;
+    }
+    .portfolio h3 {
+      color: #00f2ff;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .project {
+      background-color: #111;
+      border: 1px solid #222;
+      padding: 1.5rem;
+      border-radius: 10px;
+      width: 300px;
+      transition: transform 0.3s;
+    }
+    .project:hover {
+      transform: scale(1.05);
+    }
+    .project h4 {
+      color: #00f2ff;
+      margin-bottom: 0.5rem;
+    }
+    .project p {
+      color: #bbb;
+    }
+    .social {
+      margin-top: 3rem;
+    }
+    .social a {
+      color: #00f2ff;
+      margin: 0 1rem;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .social a:hover {
+      color: #00c3cc;
+    }
+    footer {
+      background-color: #000;
+      color: #666;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 4rem;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Frontend</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#portfolio">Projetos</a>
+      <a href="#contato">Contato</a>
+      <a>(74)99151-4464</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Bem-vindo ao Mundo Frontend</h2>
+    <p>Transformando ideias em interfaces modernas e responsivas.</p>
+    <button class="cta-btn" onclick="mostrarMensagem()">Ver Projetos</button>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <h3>Meus Projetos</h3>
+    <div class="projects">
+      <div class="project">
+        <h4>Portfolio Pessoal</h4>
+        <p>Site com design responsivo usando HTML, CSS e JavaScript.</p>
+      </div>
+      <div class="project">
+        <h4>Landing Page Futurista</h4>
+        <p>Landing page com animações e design moderno.</p>
+      </div>
+      <div class="project">
+        <h4>Dashboard Interativa</h4>
+        <p>Painel com gráficos e filtros para visualização de dados.</p>
+      </div>
+    </div>
+    <div class="social">
+      <p>Me siga nas redes sociais:</p>
+      <a href="https://www.instagram.com/frontend.2025?igsh=MTIwMGxld3lmbmY0dw==" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <p>&copy; 2025 Frontend Dev. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function mostrarMensagem() {
+      alert('Rolando até os projetos!');
+      document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
